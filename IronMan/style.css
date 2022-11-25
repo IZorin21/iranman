@@ -1,0 +1,143 @@
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  font-family: "Popins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  height: 90px;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header__body {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__item {
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-top: 9px;
+  padding-bottom: 13px;
+  padding-right: 20px;
+
+  border-radius: 14px;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav__item:hover {
+  background-color: white;
+}
+
+.nav__item:hover a {
+  color: black;
+}
+
+.nav__item a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  background: linear-gradient(360deg, #000000 18.75%, rgba(0, 0, 0, 0) 98%),
+    url("../images/images/main.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.main__text {
+  position: absolute;
+  bottom: 68px;
+  left: 50%;
+  text-align: center;
+  max-width: 580px;
+}
+
+.main__profession {
+  font-size: 54px;
+  line-height: 20px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+.main_title {
+  font-size: 54px;
+  line-height: 60px;
+  margin-bottom: 18px;
+  color: white;
+}
+
+.main_subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: aliceblue;
+}
+
+.photo-specs {
+  display: flex;
+  gap: 14px;
+
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.specs-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+span {
+  color: white;
+  font-size: 12px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  line-height: 42px;
+}
+
+.subtitle {
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+
+  margin-bottom: 42px;
+  margin-top: 15px;
+}
